@@ -157,3 +157,74 @@ nav ul li a.active {
     cursor: pointer;
     margin-top: 10px;
 }
+
+/* ... Your existing CSS above ... */
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    /* Navbar: Stack links or allow wrapping */
+    nav {
+        padding: 1rem;
+    }
+    
+    nav ul {
+        gap: 15px;
+        padding: 0;
+    }
+
+    /* Hero Section: Stack image on top of text */
+    .hero {
+        flex-direction: column-reverse; /* Text below image */
+        text-align: center;
+        padding: 2rem 5%;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Shrink title size */
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    /* Circle Frame: Resize for smaller screens */
+    .circle-frame {
+        width: 250px;
+        height: 250px;
+        border-width: 10px;
+    }
+
+    /* About Section: Stack content */
+    .about {
+        flex-direction: column;
+        gap: 40px;
+        padding: 3rem 8%;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .tags {
+        justify-content: center;
+    }
+
+    /* Contact Info: Align center */
+    .contact-info {
+        display: inline-block;
+        text-align: left; /* Keep text left-aligned but centered as a block */
+    }
+}
+
+/* Extra small devices (Phones) */
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+}
